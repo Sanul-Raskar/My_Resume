@@ -1,62 +1,13 @@
-#name {
-  box-sizing: content-box;
-  position: absolute;
-  top: 12%;
-  left: 4%;
-  width: 26%;
-  height: 32%;
+.boxborder{
   border: 3px solid lightblue;
   text-align: center;
-  padding: 10px;
-}
-
-#education {
-  box-sizing: content-box;
-  position: absolute;
-  top: 12%;
-  left: 36%;
-  width: 60%;
-  height: 66%;
-  border: 3px solid lightblue;
-  text-align: center;
-  padding: 10px;
-}
-
-#contact {
-  box-sizing: content-box;
-  position: absolute;
-  top: 42%;
-  border: 3px solid lightblue;
-}
-
-table {
-  position: absolute;
-  width: 90%;
-  left: 6%;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-th, td {
   padding: 15px;
-  text-align: center;
 }
 
-table#t01 tr:nth-child(even) {
-  background-color: #eee;
+#contact a i{
+  font-size:46px;
+  padding-left: 10px;
 }
-
-table#t01 tr:nth-child(odd) {
-  background-color: #fff;
-}
-
-table#t01 th {
-  background-color: rgb(75, 106, 105);
-  color: white;
-  text-align: center;
-  width: auto;
+#contact i{
+  font-size: 24px;
 }
