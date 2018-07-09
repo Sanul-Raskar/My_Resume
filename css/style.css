@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
-*,
-*::after,
-*::before {
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
+*, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -10,8 +7,8 @@ body {
   line-height: 1;
   margin: 0;
   width: 100%;
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: rgb(6, 21, 61);
+  font-family: 'Varela Round', sans-serif;
+  /* background: rgb(6, 21, 61); */
   color: white;
   scroll-behavior: smooth;
 }
@@ -46,14 +43,15 @@ h1 {
   font-weight: 300;
   color: #fff;
 }
-h2{
+
+h2 {
   text-align: center;
   font-size: 62px;
   line-height: 2;
   color: #fff;
-  letter-spacing: 8px;
-
+  letter-spacing: 6px;
 }
+
 .nav-trigger {
   position: fixed;
   z-index: 4;
@@ -67,9 +65,7 @@ h2{
   text-indent: 100%;
 }
 
-.nav-trigger span,
-.nav-trigger span::before,
-.nav-trigger span::after {
+.nav-trigger span, .nav-trigger span::before, .nav-trigger span::after {
   position: absolute;
   height: 2px;
   width: 36px;
@@ -83,8 +79,7 @@ h2{
   transition: background .3s;
 }
 
-.nav-trigger span::before,
-.nav-trigger span::after {
+.nav-trigger span::before, .nav-trigger span::after {
   content: '';
   top: 0;
   left: 0;
@@ -99,9 +94,7 @@ h2{
   transform: translateY(12px);
 }
 
-.nav-trigger:hover span,
-.nav-trigger:hover span::before,
-.nav-trigger:hover span::after {
+.nav-trigger:hover span, .nav-trigger:hover span::before, .nav-trigger:hover span::after {
   background: #fff;
 }
 
@@ -109,10 +102,8 @@ h2{
   background: transparent;
 }
 
-.nav-open .nav-trigger span::before,
-.nav-open .nav-trigger span::after {
+.nav-open .nav-trigger span::before, .nav-open .nav-trigger span::after {
   background: #1F283D;
-
 }
 
 .nav-open .nav-trigger span::before {
@@ -186,7 +177,6 @@ h2{
 
 .nav-open .nav a {
   animation: slide-in 0.4s 0.2s backwards;
-
 }
 
 .nav-open .nav li:nth-child(2) a {
@@ -210,57 +200,216 @@ h2{
     opacity: 0;
     transform: translateX(80px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-#bashshell{
+#bashshell {
   position: fixed;
   top: 0;
-  background:#000;
+  background: #000;
   width: 100%;
   height: auto;
   z-index: 5;
   display: block;
 }
-#bashshell1{
+
+#bashshell1 {
   position: fixed;
   top: 0;
-  background:#000;
+  background: #000;
   width: 100%;
   height: auto;
   z-index: 5;
   display: none;
 }
 
-.avatar{
+.avatar {
   text-align: center;
 }
-.avatar img{
-  padding-left:12px;
-  height: 320px;
-  width: 320px;
-  border-radius: 180px;
+
+.avatar img {
+  padding-left: 12px;
+  height: 300px;
+  width: 300px;
+  border-radius: 90%;
 }
-#edu{
+
+#edu {
   background: #fff;
+  color: #000;
+  font-weight: 400;
 }
 
-#row1{
-   background:rgb(11, 42, 102);
+#row1 {
+  background: rgb(11, 42, 102);
 }
 
-#row2{
-  /* background:rgb(11, 42, 102) ; */
-}
-#row2 img{
-  padding-left: 26px;
-  width: 360px;
-  height: 360px;
-}
-.table{
+#row2 {
   text-align: center;
+}
+
+#row2 h1 {
+  color: #000;
+  text-align: center;
+  padding-left: 150px;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+#row2 img {
+  padding-top: 30px;
+  width: 260px;
+  height: 260px;
+}
+
+.table {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+footer h6 {
+  font-size: 24px;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+footer a i {
+  font-size: 36px;
+  color: #fff;
+}
+
+#blankcontainer {
+  background-color: #fff;
+}
+
+#techprofile {
+  background-color: #fff;
+  color: #000;
+}
+
+#techprofile h1 {
+  color: #000;
+  text-align: center;
+  padding-left: 400px;
+}
+
+#html5 {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(246, 124, 11);
+}
+
+.iclass {
+  padding-top: 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 58px;
+}
+
+.h3class {
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+}
+
+#css3 {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(245, 38, 38);
+}
+
+#js {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(255, 252, 0);
+}
+
+#c {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: lightblue;
+}
+
+#c h3 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 38px;
+}
+
+#java {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(235, 6, 40);
+}
+
+#python {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(40, 53, 227);
+}
+
+#database {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(61, 149, 30);
+}
+
+#assembly {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(134, 29, 147);
+}
+
+#assembly h3 {
+  padding-top: 44px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+#git {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: #000;
+}
+
+#php {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(42, 88, 191);
+}
+
+#bash {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 60%;
+  background-color: rgb(0, 0, 0);
 }
