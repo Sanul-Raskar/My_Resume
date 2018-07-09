@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 *,
 *::after,
 *::before {
@@ -8,8 +10,7 @@ body {
   line-height: 1;
   margin: 0;
   width: 100%;
-  /* height: 100%; */
-  /* background:#26292f; */
+  font-family: 'Open Sans Condensed', sans-serif;
   background: rgb(6, 21, 61);
   color: white;
   scroll-behavior: smooth;
@@ -34,7 +35,6 @@ main {
   display: table;
   /* background: #26292f; */
   background: rgb(11, 42, 102);
-
   background-size: cover;
 }
 
@@ -48,9 +48,11 @@ h1 {
 }
 h2{
   text-align: center;
-  font-size: 52px;
+  font-size: 62px;
   line-height: 2;
   color: #fff;
+  letter-spacing: 8px;
+
 }
 .nav-trigger {
   position: fixed;
@@ -239,8 +241,8 @@ h2{
 }
 .avatar img{
   padding-left:12px;
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   border-radius: 180px;
 }
 #edu{
@@ -255,8 +257,9 @@ h2{
   /* background:rgb(11, 42, 102) ; */
 }
 #row2 img{
-  width: 400px;
-  height: 400px;
+  padding-left: 26px;
+  width: 360px;
+  height: 360px;
 }
 .table{
   text-align: center;
