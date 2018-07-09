@@ -17,13 +17,17 @@
   <a href="#" class="nav-trigger"> <span></span> </a>
   <main>
     <section class="intro">
-      <div class="bashshell">
-        <h3>sanul@sanul-HP-Notebook:<span style="color:blue">~</span>$ chmod +x Sanul_Resume.sh</h3>
-        <h3>sanul@sanul-HP-Notebook:<span style="color:blue">~</span>$ ./Sanul_Resume.sh</h3>
-        <h3>sanul@sanul-HP-Notebook:<span style="color:blue">~</span>$</h3>
-      </div>
-      <div class="col-xs-12" style="height:200px;"></div>
-      <div class="container">
+      <div id="bashshell">
+        <video width="100%" height="150px" autoplay>
+          <source src="css/img/bashshell1.mp4" type="video/mp4">
+        </video> </div>
+      <div id="bashshell1">
+        <video width="98%" height="150px" autoplay loop>
+            <source src="css/img/bashshell2.mp4" type="video/mp4">
+          </video> </div>
+
+      <div class="col-xs-12" style="height:260px;"></div>
+      <div class="container-fluid">
         <div class="row" id="row1">
           <div class="col-sm-6">
             <div class="avatar">
@@ -37,7 +41,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div  class="container-fluid" id="edu">
 
 
         <div class="col-xs-12" style="height:40px;"></div>
@@ -46,7 +50,7 @@
             <img src="css/img/edu.svg" alt="">
           </div>
           <div class="col-sm-7">
-            <h1>Education</h1><br>
+            <h1 style="text-align:center">Education</h1><br>
             <table class="table">
               <thead class="thead-light">
                 <tr>
@@ -109,6 +113,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
+    var video1 = document.getElementById('bashshell');
+    var video2 = document.getElementById('bashshell1');
+    setTimeout(function() {
+      video1.style.display = "none";
+      video2.style.display = "block";
+
+    }, 22000);
+
     var navTrigger = document.getElementsByClassName('nav-trigger')[0],
       body = document.getElementsByTagName('body')[0];
     navTrigger.addEventListener('click', toggleNavigation);
