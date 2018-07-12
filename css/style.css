@@ -22,6 +22,29 @@ main {
   transition: transform .5s;
 }
 
+#hidebody {
+  display: none;
+}
+
+.animatebody {
+  animation: bodyentry 2s forwards 0s ease-out;
+}
+
+@keyframes bodyentry {
+  0% {
+    opacity: 0.3;
+    transform: scale(-0.5);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(-0.3);
+  }
+  100% {
+    opacity: 1.0;
+    transform: scale(1.0);
+  }
+}
+
 .nav-open main {
   transform: scale(.8);
 }
@@ -30,7 +53,6 @@ main {
   height: 100vh;
   width: 100%;
   display: table;
-  /* background: #26292f; */
   background: rgb(11, 42, 102);
   background-size: cover;
 }
@@ -495,12 +517,66 @@ footer a i {
 
 #rightpanel h3 {
   font-family: 'Courgette', cursive;
-  color: #fff;
+  color: rgb(0, 251, 221);
   position: absolute;
   right: 40px;
-  top: 180px;
+  top: 140px;
   font-size: 80px;
   font-weight: bold;
   text-align: center;
   z-index: 3;
+}
+
+.paintbutton {
+  position: absolute;
+  z-index: 100;
+  width: 30%;
+  height: 12%;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 22px;
+  top: 74%;
+  left: 30%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.paintbutton:hover {
+  color: #000;
+  font-weight: bold;
+  background: rgba(38, 37, 34, 0.26);
+}
+
+.paintbutton:focus {
+  outline-width: 0;
+}
+
+.techbutton {
+  position: absolute;
+  z-index: 100;
+  width: 32%;
+  height: 12%;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 22px;
+  top: 74%;
+  right: 32%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.techbutton:hover {
+  color: #000;
+  font-weight: bold;
+  background: rgba(38, 37, 34, 0.26);
+}
+
+.techbutton:focus {
+  outline-width: 0;
 }
