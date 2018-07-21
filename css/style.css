@@ -6,7 +6,7 @@
 body {
   line-height: 1;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   font-family: 'Varela Round', sans-serif;
   background: rgb(6, 21, 61);
   color: white;
@@ -24,6 +24,7 @@ main {
 
 #hidebody {
   display: none;
+  width: 100%;
 }
 
 .animatebody {
@@ -240,6 +241,7 @@ h2 {
 #bashshell {
   position: absolute;
   top: 0;
+  left:0;
   background: #000;
   width: 100%;
   height: auto;
@@ -247,9 +249,11 @@ h2 {
   display: block;
 }
 
+
 #bashshell1 {
   position: absolute;
   top: 0;
+  left:0;
   background: #000;
   width: 100%;
   height: auto;
@@ -258,13 +262,15 @@ h2 {
 }
 
 .avatar {
+  height: auto;
   text-align: center;
 }
 
 .avatar img {
-  padding-left: 12px;
-  height: 300px;
-  width: 300px;
+  position: absolute;
+  left: 4%;
+  height: 100%;
+  width: 100%;
   border-radius: 90%;
 }
 
@@ -277,6 +283,10 @@ h2 {
 #row1 {
   background: rgb(11, 42, 102);
 }
+#row1 h2{
+font-weight: bold;
+font-size: 4vw;
+}
 
 #row2 {
   text-align: center;
@@ -285,39 +295,43 @@ h2 {
 #row2 h1 {
   color: #000;
   text-align: center;
-  padding-left: 150px;
-  font-size: 52px;
+  position: absolute;
+  left: 26%;
+  font-size: 4vw;
   font-weight: bold;
 }
 
 #row2 img {
-  padding-top: 30px;
-  width: 260px;
-  height: 260px;
+  position: absolute;
+  top: 24%;
+  left:18%;
+  width: 50%;
+  height: 50%;
 }
 
 .table {
   text-align: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2vw;
   line-height: 26px;
 }
 
 footer h6 {
-  font-size: 24px;
+  font-size: 1.5vw;
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 footer a i {
-  font-size: 36px;
+  font-size: 3.2vw;
   color: #fff;
 }
 
 #blankcontainer {
   background-color: #fff;
+  width: 100%;
 }
 
 #techprofile {
@@ -326,134 +340,13 @@ footer a i {
 }
 
 #techprofile h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  left: 32%;
+  z-index: 3;
   color: #000;
-  text-align: center;
-  padding-left: 400px;
-}
-
-#html5 {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(246, 124, 11);
-  margin: 10px;
-}
-
-.iclass {
-  padding-top: 18px;
-  color: #fff;
-  text-align: center;
-  font-size: 58px;
-}
-
-.h3class {
-  font-size: 42px;
-  color: #fff;
-  text-align: center;
-}
-
-#css3 {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(245, 38, 38);
-  margin: 10px;
-}
-
-#js {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(255, 252, 0);
-  margin: 10px;
-}
-
-#c {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: lightblue;
-  margin: 10px;
-}
-
-#c h3 {
-  padding-top: 50px;
-  text-align: center;
-  font-size: 38px;
-}
-
-#java {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(235, 6, 40);
-  margin: 10px;
-}
-
-#python {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(40, 53, 227);
-  margin: 10px;
-}
-
-#database {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(61, 149, 30);
-  margin: 10px;
-}
-
-#assembly {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(134, 29, 147);
-  margin: 10px;
-}
-
-#assembly h3 {
-  padding-top: 44px;
-  text-align: center;
-  font-size: 32px;
-  color: #fff;
-}
-
-#git {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: #000;
-  margin: 10px;
-}
-
-#php {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(42, 88, 191);
-  margin: 10px;
-}
-
-#bash {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  background-color: rgb(0, 0, 0);
-  margin: 10px;
+  height: 50px;
 }
 
 #projects {
@@ -461,12 +354,21 @@ footer a i {
   background: rgb(11, 42, 102);
   color: #000;
 }
-
+#projects p{
+  font-size: 1.5vw;
+}
+#projects h5{
+  font-weight: bold;
+  font-size: 2vw;
+}
+#projects a{
+  font-size: 1.6vw;
+}
 #prohead h3 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
   position: absolute;
-  left: 580px;
+  left: 42%;
   z-index: 3;
   color: #fff;
   height: 50px;
@@ -474,10 +376,10 @@ footer a i {
 }
 
 #hobbieshead h6 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
   position: absolute;
-  left: 520px;
+  left: 40%;
   z-index: 3;
   color: #000;
 }
@@ -490,7 +392,7 @@ footer a i {
 #leftpanel img {
   width: 100%;
   height: 500px;
-  padding-left: 0px;
+  left: 0;
   opacity: 0.8;
   z-index: 2;
 }
@@ -498,18 +400,18 @@ footer a i {
 #rightpanel img {
   width: 100%;
   height: 500px;
-  padding-right: 0px;
+  right: 0;
   opacity: 0.7;
   z-index: 2;
 }
 
 #leftpanel h3 {
   position: absolute;
-  left: 150px;
-  top: 200px;
+  left: 24%;
+  top: 30%;
   font-family: 'Courgette', cursive;
   color: rgb(8, 19, 42);
-  font-size: 80px;
+  font-size: 6vw;
   font-weight: bold;
   text-align: center;
   z-index: 3;
@@ -519,9 +421,9 @@ footer a i {
   font-family: 'Courgette', cursive;
   color: rgb(0, 251, 221);
   position: absolute;
-  right: 40px;
-  top: 140px;
-  font-size: 80px;
+  right: 6%;
+  top: 20%;
+  font-size: 6vw;
   font-weight: bold;
   text-align: center;
   z-index: 3;
@@ -535,11 +437,11 @@ footer a i {
   border: 1px solid #fff;
   background: #000;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: bold;
   border-radius: 22px;
   top: 74%;
-  left: 30%;
+  left: 36%;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -562,7 +464,7 @@ footer a i {
   border: 1px solid #fff;
   background: #000;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: bold;
   border-radius: 22px;
   top: 74%;
